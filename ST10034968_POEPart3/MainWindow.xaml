@@ -34,7 +34,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Button x:Name="btnAddRecipe" Content="Add a Recipe" HorizontalAlignment="Center" Margin="0,179,0,0" Padding="10,5"  VerticalAlignment="Top" FontSize="14" BorderBrush="#FFF7F4F3" Background="#FF202020" Foreground="#FFF7F4F3" Click="btnAddRecipe_Click"/>
+        <Button x:Name="btnAddRecipe" Content="View My Recipes" HorizontalAlignment="Center" Margin="0,179,0,0" Padding="10,5"  VerticalAlignment="Top" FontSize="14" BorderBrush="#FFF7F4F3" Background="#FF202020" Foreground="#FFF7F4F3" Click="btnAddRecipe_Click"/>
 
     </Grid>
 </Window>

@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10034968_POEPart3.User_Interface"
         mc:Ignorable="d"
-        Title="DisplayRecipesWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Sanele's Recipe App" Height="600" Width="800">
+    <Grid  Background="#202020">
+        <Label x:Name="label" Content="Recipes" Style="{StaticResource heading}" Margin="0,50,0,0" VerticalAlignment="Top" BorderThickness="0,6,0,6" Padding="25,5,25,5" />
+        <Label x:Name="label1" Content="Filter By:" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="161,132,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="label2" Content="Search:" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="170,168,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="280,138,0,0" VerticalAlignment="Top" Width="169"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="280,175,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="169"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="488,142,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="488,173,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="170,240,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="182" Width="438"/>
+        <Label x:Name="label3" Content="Label" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="170,436,0,0" VerticalAlignment="Top" FontSize="16"/>
+
     </Grid>
 </Window>

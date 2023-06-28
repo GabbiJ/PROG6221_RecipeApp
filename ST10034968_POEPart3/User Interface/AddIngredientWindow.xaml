@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10034968_POEPart3.User_Interface"
         mc:Ignorable="d"
-        Title="AddIngredientWindow" Height="450" Width="800">
+        Title="Add Ingredient" Height="450" Width="800">
     <Grid Background="#202020">
         <Label x:Name="lblTitle" Content="Add an Ingredient" Style="{StaticResource heading}"  HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label" Content="Name" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="202,136,0,0" VerticalAlignment="Top"/>
@@ -14,7 +14,7 @@
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Style="{StaticResource defaultTextbox}" Margin="202,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
         <Button x:Name="btnAdd" Content="Add" Style="{StaticResource defaultButton}" HorizontalAlignment="Center" Margin="0,332,0,0" VerticalAlignment="Top" Width="100" Background="#72564D4A"/>
         <TextBox x:Name="txtQuantity" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="202,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
-        <ComboBox x:Name="comboBox" Style="{StaticResource defaultComboBox}" HorizontalAlignment="Left" Margin="452,259,0,0" VerticalAlignment="Top" Width="197"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="452,259,0,0" VerticalAlignment="Top" Width="197"/>
 
     </Grid>
 </Window>

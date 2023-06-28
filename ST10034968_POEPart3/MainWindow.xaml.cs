@@ -28,8 +28,8 @@ namespace ST10034968_POEPart3
         //method for when button is clicked the user is taken to Add Recipe Window
         private void btnAddRecipe_Click(object sender, RoutedEventArgs e)
         {
-            AddRecipeWindow ar = new AddRecipeWindow();
-            ar.Show();
+            DisplayRecipesWindow dr = new DisplayRecipesWindow();
+            dr.Show();
             this.Close();
         }
     }
