@@ -28,7 +28,6 @@ namespace ST10034968_POEPart3.User_Interface
         {
             AddIngredientWindow ai = new AddIngredientWindow();
             ai.Show();
-            this.Close();
         }
     }
 }

@@ -50,5 +50,12 @@
         <Setter Property="FontSize" Value="15"/>
     </Style>
 
+    <Style TargetType="ComboBox" x:Key="defaultComboBox">
+        <Setter Property="Background" Value="#202020"/>
+        <Setter Property="Foreground" Value="#FFF7F4F3"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Template">
+        </Setter>
+    </Style>
 
 </ResourceDictionary>
