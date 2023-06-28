@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10034968_POEPart3.User_Interface"
         mc:Ignorable="d"
-        Title="AddRecipeWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Sanele's Recipe Application" Height="450" Width="800">
+    <Grid Background="#202020">
+        <Label x:Name="lblTitle" Content="Add a Recipe" FontSize="24" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

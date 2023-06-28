@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ST10034968_POEPart3.User_Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,13 @@ namespace ST10034968_POEPart3
         public MainWindow()
         {
             InitializeComponent();
+        }
+        //method for when button is clicked the user is taken to Add Recipe Window
+        private void btnAddRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            AddRecipeWindow ar = new AddRecipeWindow();
+            ar.Show();
+            this.Close();
         }
     }
 }

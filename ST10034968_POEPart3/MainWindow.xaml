@@ -1,0 +1,40 @@
+﻿<Window x:Class="ST10034968_POEPart3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ST10034968_POEPart3"
+        mc:Ignorable="d"
+        Title="Sanele's Recipe Application" Height="450" Width="800">
+    <Grid Background="#202020">
+        <Label x:Name="lblTitle" Content="Sanele's Recipe App" HorizontalAlignment="Center" Margin="0,52,0,0" VerticalAlignment="Top" Foreground="#FFF7F4F3" FontSize="42" FontWeight="Bold"/>
+        <Label x:Name="lblSubtitle" Content="Manage all your recipes" HorizontalAlignment="Center" Margin="0,120,0,0" Foreground="#FFF7F4F3" VerticalAlignment="Top" FontSize="18"/>
+        <Rectangle HorizontalAlignment="Center" Height="177" Margin="0,257,0,0" VerticalAlignment="Top" Width="800">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="90" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FF5B2333" Offset="1"/>
+                    <GradientStop Color="#FF564D4A" Offset="0.462"/>
+                    <GradientStop Color="#FFBA1B1D" Offset="0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Center" Height="172" Margin="0,229,0,0" VerticalAlignment="Top" Width="800">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF202020" Offset="0.18"/>
+                    <GradientStop Color="#00202020" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Button x:Name="btnAddRecipe" Content="Add a Recipe" HorizontalAlignment="Center" Margin="0,179,0,0" Padding="10,5"  VerticalAlignment="Top" FontSize="14" BorderBrush="#FFF7F4F3" Background="#FF202020" Foreground="#FFF7F4F3" Click="btnAddRecipe_Click"/>
+
+    </Grid>
+</Window>
