@@ -20,3 +20,5 @@ C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG62
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\ST10034968_POEPart3.pdb
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\MainWindow.g.cs
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\MainWindow.baml
+C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\User Interface\Styles.baml
+C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\App.baml

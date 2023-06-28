@@ -5,17 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10034968_POEPart3.User_Interface"
         mc:Ignorable="d"
-        Title="Sanele's Recipe Application" Height="450" Width="800">
+        Title="Sanele's Recipe Application" Height="600" Width="800">
     <Grid Background="#202020">
-        <Label x:Name="lblTitle" Style="{StaticResource heading}" Content="Add a Recipe" FontSize="24" HorizontalAlignment="Center" Margin="0,55,0,0" VerticalAlignment="Top">
-            <!--<Label.Foreground>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black"/>
-                    <GradientStop Color="White" Offset="1"/>
-                    <GradientStop Color="#FF777777" Offset="0.5"/>
-                </LinearGradientBrush>
-            </Label.Foreground>-->
-        </Label>
 
+        <TextBlock x:Name="tbDisplayRecipe" Style="{StaticResource defaultTextblock}"  HorizontalAlignment="Center" Margin="0,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="123" Width="580" Background="#FF2D2626" />
+        <Label x:Name="lblYourRecipe" Content="Your Recipe:" Style="{StaticResource defaultLabel}" Margin="0,107,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="Add a Step" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="202,286,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAddIngredient" Style="{StaticResource defaultButton}" Content="Add Ingredient"  HorizontalAlignment="Left" Margin="492,325,0,0" VerticalAlignment="Top" Background="#4C5B2333" Click="btnAddIngredient_Click" />
+        <TextBox x:Name="textBox" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="110,328,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="290" Height="30"/>
+        <Label x:Name="lblTitle" Style="{StaticResource heading}" Content="Add a Recipe" Margin="0,22,0,0" VerticalAlignment="Top" />
+        <Button x:Name="btnAddStep" Content="Add Step" Style="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="212,372,0,0" VerticalAlignment="Top" Background="#2DBA1B1D"/>
     </Grid>
 </Window>

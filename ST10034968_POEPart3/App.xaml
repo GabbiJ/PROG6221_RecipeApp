@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:ST10034968_POEPart3"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="User Interface/Styles.xaml"/>
     </Application.Resources>
 </Application>

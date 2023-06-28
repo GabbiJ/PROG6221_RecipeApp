@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ST10034968_POEPart3.User_Interface"
         mc:Ignorable="d"
         Title="AddIngredientWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#202020">
         
     </Grid>
 </Window>

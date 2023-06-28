@@ -23,5 +23,12 @@ namespace ST10034968_POEPart3.User_Interface
         {
             InitializeComponent();
         }
+
+        private void btnAddIngredient_Click(object sender, RoutedEventArgs e)
+        {
+            AddIngredientWindow ai = new AddIngredientWindow();
+            ai.Show();
+            this.Close();
+        }
     }
 }
