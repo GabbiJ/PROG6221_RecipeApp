@@ -21,7 +21,7 @@
                         </TransformGroup>
                     </LinearGradientBrush.RelativeTransform>
                     <GradientStop Color="#FF5B2333" Offset="1"/>
-                    <GradientStop Color="#FF564D4A" Offset="0.462"/>
+                    <GradientStop Color="#FF564D4A" Offset="0.49"/>
                     <GradientStop Color="#FFBA1B1D" Offset="0"/>
                 </LinearGradientBrush>
             </Rectangle.Fill>
