@@ -12,11 +12,11 @@ namespace ST10034968_POEPart3
 {
     //this class serves the purpose to store all recipes for the application 
     //this was done in substitute of declaring a list of recipes in the recipes class as for each recipe to have a list I viewed as a waste of memory
-    public static class AllRecipes
+    public class AllRecipes
     {
-        public static List<Recipe> allRecipes;
+        public List<Recipe> allRecipes;
         //temporary ingredient and recipe objects 
-        public static Recipe tempRecipe;
-        public static Ingredient tempIngredient;
+        public Recipe tempRecipe;
+        public Ingredient tempIngredient;
     }
 }

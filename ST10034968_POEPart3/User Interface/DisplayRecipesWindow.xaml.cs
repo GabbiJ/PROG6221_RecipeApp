@@ -38,14 +38,22 @@ namespace ST10034968_POEPart3.User_Interface
         //method to display all the recipes in the text block
         public void displayAllRecipes()
         {
-            string output = "";
-
-            foreach (var r in AllRecipes.allrecipes)
+            try
             {
-                r.ToString();
+                string output = "";
+
+                foreach (var r in AllRecipes.allRecipes)
+                {
+                    r.ToString();
+                }
+
+                tbAllRecipes.Text = output;
+            }
+            catch (Exception ex)
+            {
+                lblErrorMessage.Content = "Error: " + ex.Message;
             }
 
-            tbAllRecipes.Text = output;
         }
 
         private void btnScale_Click(object sender, RoutedEventArgs e)
