@@ -23,5 +23,26 @@ namespace ST10034968_POEPart3.User_Interface
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void txtOtherUnitOfMeasurement_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txtOtherUnitOfMeasurement.Clear();
+            BrushConverter converter = new BrushConverter();
+            Brush brush = (Brush)converter.ConvertFromString("#FFF7F4F3");
+            txtOtherUnitOfMeasurement.Foreground = brush;
+        }
+
+        private void txtOtherUnitOfMeasurement_LostFocus(object sender, RoutedEventArgs e)
+        {
+            BrushConverter converter = new BrushConverter();
+            Brush brush = (Brush)converter.ConvertFromString("#FF4A4A4A");
+            txtOtherUnitOfMeasurement.Foreground = brush;
+            txtOtherUnitOfMeasurement.Text = "Other";
+        }
     }
 }

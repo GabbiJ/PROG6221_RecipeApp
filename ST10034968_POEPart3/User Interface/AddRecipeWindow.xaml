@@ -15,5 +15,6 @@
         <TextBox x:Name="textBox" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="110,328,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="290" Height="30"/>
         <Label x:Name="lblTitle" Style="{StaticResource heading}" Content="Add a Recipe" Margin="0,22,0,0" VerticalAlignment="Top" />
         <Button x:Name="btnAddStep" Content="Add Step" Style="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="212,372,0,0" VerticalAlignment="Top" Background="#2DBA1B1D"/>
+        <Button x:Name="btnAddRecipe" Content="Add" Style="{StaticResource defaultButton}" HorizontalAlignment="Center" Margin="0,448,0,0" VerticalAlignment="Top" FontSize="18" Background="#72564D4A" Padding="20,5,20,5"/>
     </Grid>
 </Window>
