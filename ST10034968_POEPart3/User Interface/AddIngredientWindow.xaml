@@ -5,17 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10034968_POEPart3.User_Interface"
         mc:Ignorable="d"
-        Title="Add Ingredient" Height="450" Width="800">
-    <Grid Background="#202020">
+        Title="Add Ingredient" Height="514" Width="800">
+    <Grid Background="#202020" Margin="0,0,0,-6">
         <Label x:Name="lblTitle" Content="Add an Ingredient" Style="{StaticResource heading}"  HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label" Content="Name" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="165,136,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.254,0.582"/>
         <Label x:Name="label1" Content="Amount" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="165,217,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label2" Content="Unit of Measurement" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="350,217,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Unit of Measurement" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="391,217,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtName" HorizontalAlignment="Left" Style="{StaticResource defaultTextbox}" Margin="165,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198"/>
-        <Button x:Name="btnAdd" Content="Add" Style="{StaticResource defaultButton}" HorizontalAlignment="Center" Margin="0,332,0,0" VerticalAlignment="Top" Width="100" Background="#72564D4A" Click="btnAdd_Click"/>
+        <Button x:Name="btnAdd" Content="Add" Style="{StaticResource defaultButton}" HorizontalAlignment="Center" Margin="0,414,0,0" VerticalAlignment="Top" Width="100" Background="#72564D4A" Click="btnAdd_Click"/>
         <TextBox x:Name="txtQuantity" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="165,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="350,259,0,0" VerticalAlignment="Top" Width="118"/>
-        <TextBox x:Name="txtOtherUnitOfMeasurement" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="500,259,0,0" TextWrapping="Wrap" Text="Other" VerticalAlignment="Top" Width="154" Foreground="#FF4A4A4A" GotFocus="txtOtherUnitOfMeasurement_GotFocus" LostFocus="txtOtherUnitOfMeasurement_LostFocus" />
+        <ComboBox x:Name="cmbUnitOfMeasurement" HorizontalAlignment="Left" Margin="400,259,0,0" VerticalAlignment="Top" Width="118"/>
+        <TextBox x:Name="txtOtherUnitOfMeasurement" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="536,259,0,0" TextWrapping="Wrap" Text="Other" VerticalAlignment="Top" Width="154" Foreground="#FF4A4A4A" GotFocus="txtOtherUnitOfMeasurement_GotFocus" LostFocus="txtOtherUnitOfMeasurement_LostFocus" />
+        <Label x:Name="lblErrorMessage" Style="{StaticResource defaultLabel}" Margin="0,384,0,0" VerticalAlignment="Top" FontSize="16" Foreground="#FFBA1B1D"/>
+        <Label x:Name="label3" Content="Calories" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="165,301,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCalories" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="165,343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label4" Content="Food Group"  Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="391,301,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbFoodGroup" HorizontalAlignment="Left" Margin="400,343,0,0" VerticalAlignment="Top" Width="118"/>
 
     </Grid>
 </Window>

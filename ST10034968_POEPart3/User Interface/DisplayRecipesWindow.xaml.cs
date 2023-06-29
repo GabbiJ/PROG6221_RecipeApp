@@ -22,12 +22,35 @@ namespace ST10034968_POEPart3.User_Interface
         public DisplayRecipesWindow()
         {
             InitializeComponent();
+            btnShowAllRecipes.Visibility = Visibility.Hidden;
         }
 
         private void btnAddRecipe_Click(object sender, RoutedEventArgs e)
         {
-            AddRecipeWindow ar = new AddRecipeWindow();
-            ar.Show();
+            AddRecipeWindow addRecipeWin = new AddRecipeWindow();
+            addRecipeWin.Show();
+        }
+
+        private void btnRefresh_Click(object sender, RoutedEventArgs e)
+        {
+            displayAllRecipes();
+        }
+        //method to display all the recipes in the text block
+        public void displayAllRecipes()
+        {
+            string output = "";
+
+            foreach (var r in AllRecipes.allrecipes)
+            {
+                r.ToString();
+            }
+
+            tbAllRecipes.Text = output;
+        }
+
+        private void btnScale_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

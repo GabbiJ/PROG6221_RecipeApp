@@ -10,7 +10,7 @@ using System.Xml.Linq;
  * Author: ST10034968
  */
 
-namespace ST10034968_POEPart1
+namespace ST10034968_POEPart3
 {
     public class Recipe
     {
@@ -23,6 +23,7 @@ namespace ST10034968_POEPart1
         public double totalCalories = 0;
         //delegate for event
         public event EventHandler<double> OnCalorieOver300;
+        //list of recipes
 
         //Constructor
         public Recipe(string nameEntered, List<string> stepsEntered, List<Ingredient> ingredientsEntered)

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  * Author: ST10034968
  */
 
-namespace ST10034968_POEPart1
+namespace ST10034968_POEPart3
 {
     public class Ingredient
     {

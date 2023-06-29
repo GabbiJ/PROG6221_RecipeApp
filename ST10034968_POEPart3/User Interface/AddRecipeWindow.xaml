@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10034968_POEPart3.User_Interface"
         mc:Ignorable="d"
-        Title="Sanele's Recipe Application" Height="600" Width="800">
+        Title="Add Recipe" Height="600" Width="800">
     <Grid Background="#202020">
 
         <TextBlock x:Name="tbDisplayRecipe" Style="{StaticResource defaultTextblock}"  HorizontalAlignment="Center" Margin="0,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="123" Width="580" Background="#FF2D2626" />

@@ -19,15 +19,18 @@ namespace ST10034968_POEPart3.User_Interface
     /// </summary>
     public partial class AddRecipeWindow : Window
     {
+        public Recipe tempRecipe = new Recipe();
         public AddRecipeWindow()
         {
             InitializeComponent();
-        }
 
+        }
+        //method for when add button is clicked
         private void btnAddIngredient_Click(object sender, RoutedEventArgs e)
         {
             AddIngredientWindow ai = new AddIngredientWindow();
             ai.Show();
         }
+
     }
 }

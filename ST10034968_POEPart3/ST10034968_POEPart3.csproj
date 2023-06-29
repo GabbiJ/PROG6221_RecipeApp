@@ -75,6 +75,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Back-end\AllRecipes.cs" />
     <Compile Include="Back-end\Ingredient.cs" />
     <Compile Include="Back-end\Recipe.cs" />
     <Compile Include="User Interface\AddIngredientWindow.xaml.cs">
