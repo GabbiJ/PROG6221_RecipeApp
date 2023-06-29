@@ -26,7 +26,6 @@ namespace ST10034968_POEPart3.User_Interface
         public AddRecipeWindow()
         {
             InitializeComponent();
-            tbDisplayRecipe.Text = AllRecipes.tempRecipe.ToString();
         }
         //method for when buttons are clicked
         //add ingredient button
@@ -43,7 +42,7 @@ namespace ST10034968_POEPart3.User_Interface
             {
                 //adding step to step list in recipe
                 string step = txtAddStep.Text;
-                AllRecipes.tempRecipe.steps.Add("step");
+                AllRecipes.tempRecipe.steps.Add(step);
             }
             catch (FormatException)
             {
@@ -55,7 +54,10 @@ namespace ST10034968_POEPart3.User_Interface
             }
             tbDisplayRecipe.Text = AllRecipes.tempRecipe.ToString();
         }
-        
 
+        private void btnAddRecipe_Click(object sender, RoutedEventArgs e)
+        {
+            AllRecipes.allRecipes.Add(AllRecipes.tempRecipe);
+        }
     }
 }

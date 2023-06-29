@@ -1,24 +1,24 @@
-C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\bin\Debug\ST10034968_POEPart3.exe.config
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\bin\Debug\ST10034968_POEPart3.exe
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\bin\Debug\ST10034968_POEPart3.pdb
+C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\bin\Debug\ST10034968_POEPart3.exe.config
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\ST10034968_POEPart3.csproj.AssemblyReference.cache
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\ST10034968_POEPart3.csproj.SuggestedBindingRedirects.cache
+C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\User Interface\Styles.baml
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\User Interface\AddIngredientWindow.g.cs
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\User Interface\AddRecipeWindow.g.cs
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\User Interface\DisplayRecipesWindow.g.cs
+C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\MainWindow.g.cs
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\App.g.cs
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\ST10034968_POEPart3_MarkupCompile.cache
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\ST10034968_POEPart3_MarkupCompile.lref
+C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\App.baml
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\User Interface\AddIngredientWindow.baml
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\User Interface\AddRecipeWindow.baml
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\User Interface\DisplayRecipesWindow.baml
+C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\MainWindow.baml
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\ST10034968_POEPart3.g.resources
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\ST10034968_POEPart3.Properties.Resources.resources
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\ST10034968_POEPart3.csproj.GenerateResource.cache
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\ST10034968_POEPart3.csproj.CoreCompileInputs.cache
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\ST10034968_POEPart3.exe
 C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\ST10034968_POEPart3.pdb
-C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\MainWindow.g.cs
-C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\MainWindow.baml
-C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\User Interface\Styles.baml
-C:\Users\Gabbi 9\OneDrive - ADvTECH Ltd\Varsity College\Year 2\Semester 1\PROG6221\POE\ST10034968_POEPart3\ST10034968_POEPart3\obj\Debug\App.baml

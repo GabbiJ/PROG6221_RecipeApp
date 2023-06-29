@@ -28,9 +28,9 @@ namespace ST10034968_POEPart3
         //Constructor
         public Recipe(string nameEntered, List<string> stepsEntered, List<Ingredient> ingredientsEntered)
             {
-                this.name = nameEntered;
-                this.steps = stepsEntered;
-                this.ingredients = ingredientsEntered;
+                name = nameEntered;
+                steps = stepsEntered;
+                ingredients = ingredientsEntered;
                 oldIngredients = new List<Ingredient>();
                 //calculate total calories
                 calcTotalCalories();
@@ -88,20 +88,20 @@ namespace ST10034968_POEPart3
         {
             string line = "==========================================================================";
             string output = ($"{line}\n" +
-                $"{this.name}\n" +
+                $"{name}\n" +
                 $"{line}\n");
 
             //printing ingredients and numbered steps
             output += ("Ingredients:\n");
-            for (int i = 0; i < this.ingredients.Count; i++)
+            for (int i = 0; i < ingredients.Count; i++)
             {
-                output += (this.ingredients[i].printIngredient() + "\n");
+                output += (ingredients[i].printIngredient() + "\n");
             }
             output += ("Steps:\n");
-            for (int i = 0; i < this.steps.Count; i++)
+            for (int i = 0; i < steps.Count; i++)
             {
                 output += ($"Step {i + 1}:\n" +
-                    $"{this.steps[i]}\n");
+                    $"{steps[i]}\n");
             }
 
             output += ($"Total calories: {this.calcTotalCalories()}\n");
@@ -141,11 +141,11 @@ namespace ST10034968_POEPart3
             {
                 totalCal += ing.Calories;
             }
-            this.totalCalories = totalCal;
+            totalCalories = totalCal;
             //invoking event if calories are over 300
             if (totalCal > 300)
             {
-                this.OnCalorieOver300?.Invoke(this,this.totalCalories);
+                this.OnCalorieOver300?.Invoke(this,totalCalories);
             }
             return totalCal;
         }

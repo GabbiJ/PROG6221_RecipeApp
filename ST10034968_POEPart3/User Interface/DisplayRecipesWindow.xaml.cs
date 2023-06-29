@@ -27,8 +27,15 @@ namespace ST10034968_POEPart3.User_Interface
 
         private void btnAddRecipe_Click(object sender, RoutedEventArgs e)
         {
-            AddRecipeWindow addRecipeWin = new AddRecipeWindow();
-            addRecipeWin.Show();
+            try
+            {
+                AddRecipeWindow addRecipeWin = new AddRecipeWindow();
+                addRecipeWin.Show();
+            }
+            catch (Exception ex)
+            {
+                lblErrorMessage.Content = "Error: " + ex.ToString();
+            } 
         }
 
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
@@ -44,7 +51,7 @@ namespace ST10034968_POEPart3.User_Interface
 
                 foreach (var r in AllRecipes.allRecipes)
                 {
-                    r.ToString();
+                    output += r.ToString();
                 }
 
                 tbAllRecipes.Text = output;
