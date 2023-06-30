@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10034968_POEPart3.User_Interface"
         mc:Ignorable="d"
-        Title="Sanele's Recipe App" Height="716" Width="800">
+        Title="Sanele's Recipe App" Height="716" Width="820">
     <Grid  Background="#202020" Margin="0,0,0,5">
         <Label x:Name="label" Content="Recipes" Style="{StaticResource heading}" Margin="0,50,0,0" VerticalAlignment="Top" BorderThickness="0,6,0,6" Padding="25,5,25,5" />
         <Label x:Name="label1" Content="Filter By:" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="161,138,0,0" VerticalAlignment="Top" FontSize="16"/>
@@ -14,15 +14,16 @@
         <TextBox x:Name="txtSearch"  Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="280,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Height="31"/>
         <TextBox x:Name="txtFilterInfo" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="488,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnSearch" Content="Search" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="488,182,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="tbAllRecipes" Style="{StaticResource defaultTextblock}" HorizontalAlignment="Left" Margin="170,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="182" Width="438"/>
-        <Label x:Name="label3" Content="Scale:" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="181,440,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.533,0.978"/>
-        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="280,446,0,0" VerticalAlignment="Top" Width="169" Height="33"/>
+        <Label x:Name="lblScale" Content="Scale:" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="181,440,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.533,0.978"/>
+        <ComboBox x:Name="cmbFactor" HorizontalAlignment="Left" Margin="280,446,0,0" VerticalAlignment="Top" Width="169" Height="33"/>
         <Button x:Name="btnScale" Content="Scale" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="488,446,0,0" VerticalAlignment="Top" Width="120" Click="btnScale_Click"/>
         <Button x:Name="btnClearRecipe" Style ="{StaticResource defaultButton}" Content="Clear Recipe" HorizontalAlignment="Left" Margin="181,496,0,0" VerticalAlignment="Top" Width="152"/>
         <Button x:Name="btnAddRecipe" Style ="{StaticResource defaultButton}" Content="Add a Recipe" HorizontalAlignment="Center" Margin="0,569,0,0" VerticalAlignment="Top" Width="143" Background="#2DBA1B1D" Click="btnAddRecipe_Click" FontSize="18"/>
         <Button x:Name="btnShowAllRecipes" Style ="{StaticResource defaultButton}" Content="Show all recipes" HorizontalAlignment="Left" Margin="625,161,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnRefresh" Style ="{StaticResource defaultButton}" Content="Refresh" HorizontalAlignment="Left" Margin="451,496,0,0" VerticalAlignment="Top" Width="157" Click="btnRefresh_Click"/>
         <Label x:Name="lblErrorMessage" HorizontalAlignment="Center" Margin="0,625,0,0" VerticalAlignment="Top" FontSize="16" Foreground="#FFBA1B1D"/>
+        <ListBox x:Name="lbxAllRecipes" Style ="{StaticResource defaultListBox}" Margin="181,238,181,0" VerticalAlignment="Top" Height="182" Width="438" SelectionChanged="lbxAllRecipes_SelectionChanged"/>
+        <Button x:Name="btnRevert" Style ="{StaticResource defaultButton}" Content="Revert" HorizontalAlignment="Left" Margin="644,446,0,0" VerticalAlignment="Top" Width="116"/>
 
     </Grid>
 </Window>

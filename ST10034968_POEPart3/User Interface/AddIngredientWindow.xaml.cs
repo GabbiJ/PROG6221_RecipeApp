@@ -47,6 +47,8 @@ namespace ST10034968_POEPart3.User_Interface
                 }
                 //creating ingredient and adding it to recipe list
                 AllRecipes.tempIngredient = new Ingredient(name, unitOfMeasurement, quantity, calories, foodGroup);
+                AllRecipes.tempRecipe.ingredients.Add(AllRecipes.tempIngredient);
+                this.Close();
             }
             catch (FormatException)
             {

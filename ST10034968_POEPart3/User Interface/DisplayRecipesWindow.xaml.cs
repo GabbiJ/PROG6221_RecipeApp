@@ -23,6 +23,11 @@ namespace ST10034968_POEPart3.User_Interface
         {
             InitializeComponent();
             btnShowAllRecipes.Visibility = Visibility.Hidden;
+            lblScale.Visibility = Visibility.Hidden;
+            cmbFactor.Visibility = Visibility.Hidden;
+            btnScale.Visibility = Visibility.Hidden;
+            btnClearRecipe.Visibility = Visibility.Hidden;
+            btnRevert.Visibility = Visibility.Hidden;
         }
 
         private void btnAddRecipe_Click(object sender, RoutedEventArgs e)
@@ -47,14 +52,11 @@ namespace ST10034968_POEPart3.User_Interface
         {
             try
             {
-                string output = "";
-
                 foreach (var r in AllRecipes.allRecipes)
                 {
-                    output += r.ToString();
+                    lbxAllRecipes.Items.Add(r.ToString());
                 }
 
-                tbAllRecipes.Text = output;
             }
             catch (Exception ex)
             {
@@ -62,9 +64,52 @@ namespace ST10034968_POEPart3.User_Interface
             }
 
         }
-
+        //event for when scale button clicked
         private void btnScale_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                //scaling relevant recipe that is selected in list box
+                AllRecipes.allRecipes.ElementAt(lbxAllRecipes.SelectedIndex).scale(Convert.ToDouble(cmbFactor.Text));
+            }
+            catch (Exception ex)
+            {
+                lblErrorMessage.Content = "Error: " + ex.Message;
+            }
+
+
+        }
+        //event for when an item is selected or deselected in the list box the relevant fields show
+        private void lbxAllRecipes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                //if an item is selected then display relevant buttons
+                if (lbxAllRecipes.SelectedItems != null)
+                {
+                    lblScale.Visibility = Visibility.Visible;
+                    cmbFactor.Visibility = Visibility.Visible;
+                    btnScale.Visibility = Visibility.Visible;
+                    btnClearRecipe.Visibility = Visibility.Visible;
+                    //if recipe has been scaled, show revert button
+                    if (AllRecipes.allRecipes.ElementAt(lbxAllRecipes.SelectedIndex).quantitiesAltered == true)
+                    {
+                        btnRevert.Visibility = Visibility.Visible;
+                    }
+                }
+                else
+                {
+                    lblScale.Visibility = Visibility.Hidden;
+                    cmbFactor.Visibility = Visibility.Hidden;
+                    btnScale.Visibility = Visibility.Hidden;
+                    btnClearRecipe.Visibility = Visibility.Hidden;
+                    btnRevert.Visibility = Visibility.Hidden;
+                }
+            }
+            catch (Exception ex)
+            {
+                lblErrorMessage.Content = "Error: " + ex.Message;
+            }
 
         }
     }

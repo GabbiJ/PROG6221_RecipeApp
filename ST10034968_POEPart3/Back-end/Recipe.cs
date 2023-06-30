@@ -16,8 +16,8 @@ namespace ST10034968_POEPart3
     {
         //declarations
         public string name;
-        public List<string> steps;
-        public List<Ingredient> ingredients;
+        public List<string> steps = new List<string>();
+        public List<Ingredient> ingredients = new List<Ingredient>();
         public List<Ingredient> oldIngredients;
         public bool quantitiesAltered = false;
         public double totalCalories = 0;
@@ -86,10 +86,7 @@ namespace ST10034968_POEPart3
         //overriding toString method 
         public override string ToString()
         {
-            string line = "==========================================================================";
-            string output = ($"{line}\n" +
-                $"{name}\n" +
-                $"{line}\n");
+            string output = ($"{name}\n");
 
             //printing ingredients and numbered steps
             output += ("Ingredients:\n");
@@ -128,8 +125,7 @@ namespace ST10034968_POEPart3
             output += ($"The recommended amount of calories for an adult male:\t2500 calories\n" +
                 $"The recommended amount of calories for an adult female:\t2000 calories\n" +
                 $"However many other factors such as age and exercise can change these recommended daily calory amounts\n");
-            output += ($"{line}\n" +
-                $"{line}\n");
+            output += ($"\n");
 
             return output;
         }

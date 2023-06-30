@@ -5,17 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10034968_POEPart3.User_Interface"
         mc:Ignorable="d"
-        Title="Add Recipe" Height="600" Width="800">
-    <Grid Background="#202020">
-
-        <TextBlock x:Name="tbDisplayRecipe" Style="{StaticResource defaultTextblock}"  HorizontalAlignment="Center" Margin="0,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="123" Width="580" Background="#FF2D2626" />
+        Title="Add Recipe" Height="689" Width="820">
+    <Grid Background="#202020" Margin="0,0,0,-6">
         <Label x:Name="lblYourRecipe" Content="Your Recipe:" Style="{StaticResource defaultLabel}" Margin="0,107,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label" Content="Add a Step" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="202,286,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnAddIngredient" Style="{StaticResource defaultButton}" Content="Add Ingredient"  HorizontalAlignment="Left" Margin="492,325,0,0" VerticalAlignment="Top" Background="#4C5B2333" Click="btnAddIngredient_Click" />
-        <TextBox x:Name="txtAddStep" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="110,328,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="290" Height="30"/>
+        <Label x:Name="label" Content="Add a Step" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="239,396,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnAddIngredient" Style="{StaticResource defaultButton}" Content="Add Ingredient"  HorizontalAlignment="Left" Margin="529,435,0,0" VerticalAlignment="Top" Background="#4C5B2333" Click="btnAddIngredient_Click" />
+        <TextBox x:Name="txtAddStep" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="147,438,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="290" Height="30"/>
         <Label x:Name="lblTitle" Style="{StaticResource heading}" Content="Add a Recipe" Margin="0,22,0,0" VerticalAlignment="Top" />
-        <Button x:Name="btnAddStep" Content="Add Step" Style="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="212,372,0,0" VerticalAlignment="Top" Background="#2DBA1B1D" Click="btnAddStep_Click"/>
-        <Button x:Name="btnAddRecipe" Content="Add" Style="{StaticResource defaultButton}" HorizontalAlignment="Center" Margin="0,448,0,0" VerticalAlignment="Top" FontSize="18" Background="#72564D4A" Padding="20,5,20,5" Click="btnAddRecipe_Click"/>
+        <Button x:Name="btnAddStep" Content="Add Step" Style="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="249,482,0,0" VerticalAlignment="Top" Background="#2DBA1B1D" Click="btnAddStep_Click"/>
+        <Button x:Name="btnAddRecipe" Content="Add" Style="{StaticResource defaultButton}" HorizontalAlignment="Center" Margin="0,558,0,0" VerticalAlignment="Top" FontSize="18" Background="#72564D4A" Padding="20,5,20,5" Click="btnAddRecipe_Click"/>
         <Label x:Name="lblErrorMessage" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="383,514,0,0" VerticalAlignment="Top" FontSize="16" Foreground="#FFBA1B1D"/>
+        <ListBox x:Name="lbxDisplayRecipe" Style="{StaticResource defaultListBox}" Margin="110,149,110,288" Width="580" Background="#FF2D2626"/>
     </Grid>
 </Window>

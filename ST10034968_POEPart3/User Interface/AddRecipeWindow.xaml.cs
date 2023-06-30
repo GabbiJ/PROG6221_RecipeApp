@@ -31,13 +31,24 @@ namespace ST10034968_POEPart3.User_Interface
         //add ingredient button
         private void btnAddIngredient_Click(object sender, RoutedEventArgs e)
         {
-            AddIngredientWindow ai = new AddIngredientWindow();
-            ai.Show();
-            tbDisplayRecipe.Text = AllRecipes.tempRecipe.ToString();
+            lbxDisplayRecipe.Items.Clear();
+            try
+            {
+                //opening add ingredient window and displaying updated recipe
+                AddIngredientWindow ai = new AddIngredientWindow();
+                ai.Show();
+                lbxDisplayRecipe.Items.Add(AllRecipes.tempRecipe.ToString());
+            }
+            catch (Exception ex)
+            {
+                lblErrorMessage.Content = ex.ToString();
+            }
+
         }
         //add step button
         private void btnAddStep_Click(object sender, RoutedEventArgs e)
         {
+            lbxDisplayRecipe.Items.Clear();
             try
             {
                 //adding step to step list in recipe
@@ -52,12 +63,13 @@ namespace ST10034968_POEPart3.User_Interface
             {
                 lblErrorMessage.Content = ex.Message;
             }
-            tbDisplayRecipe.Text = AllRecipes.tempRecipe.ToString();
+            lbxDisplayRecipe.Items.Add(AllRecipes.tempRecipe.ToString());
         }
 
         private void btnAddRecipe_Click(object sender, RoutedEventArgs e)
         {
             AllRecipes.allRecipes.Add(AllRecipes.tempRecipe);
+            this.Close();
         }
     }
 }
