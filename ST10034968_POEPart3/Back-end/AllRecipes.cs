@@ -15,6 +15,8 @@ namespace ST10034968_POEPart3
     public static class AllRecipes
     {
         public static List<Recipe> allRecipes = new List<Recipe>();
+        //temp list of recipes to store filtered and searched recipes
+        public static List<Recipe> filteredRecipes = new List<Recipe>(); 
         //temporary ingredient and recipe objects 
         public static Recipe tempRecipe = new Recipe();
         public static Ingredient tempIngredient = new Ingredient();

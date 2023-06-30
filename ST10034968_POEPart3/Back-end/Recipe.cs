@@ -23,7 +23,6 @@ namespace ST10034968_POEPart3
         public double totalCalories = 0;
         //delegate for event
         public event EventHandler<double> OnCalorieOver300;
-        //list of recipes
 
         //Constructor
         public Recipe(string nameEntered, List<string> stepsEntered, List<Ingredient> ingredientsEntered)
@@ -50,9 +49,7 @@ namespace ST10034968_POEPart3
                 {
                     oldIngredients.Add(makeCopy(ingredients.ElementAt(i)));
                 }
- 
-            }
-
+             }
             for (int i = 0; i < ingredients.Count; i++)
             {
                 ingredients.ElementAt(i).Quantity *= factor;
@@ -122,9 +119,6 @@ namespace ST10034968_POEPart3
                 output += ("Total calories exceed half the recommended daily calories for an adult female.\n");
             }
 
-            output += ($"The recommended amount of calories for an adult male:\t2500 calories\n" +
-                $"The recommended amount of calories for an adult female:\t2000 calories\n" +
-                $"However many other factors such as age and exercise can change these recommended daily calory amounts\n");
             output += ($"\n");
 
             return output;

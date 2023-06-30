@@ -5,25 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10034968_POEPart3.User_Interface"
         mc:Ignorable="d"
-        Title="Sanele's Recipe App" Height="716" Width="820">
-    <Grid  Background="#202020" Margin="0,0,0,5">
+        Title="Sanele's Recipe App" Height="956" Width="908">
+    <Grid  Background="#202020" Margin="0,0,0,-6">
         <Label x:Name="label" Content="Recipes" Style="{StaticResource heading}" Margin="0,50,0,0" VerticalAlignment="Top" BorderThickness="0,6,0,6" Padding="25,5,25,5" />
         <Label x:Name="label1" Content="Filter By:" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="161,138,0,0" VerticalAlignment="Top" FontSize="16"/>
         <Label x:Name="label2" Content="Search:" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="170,184,0,0" VerticalAlignment="Top" FontSize="16"/>
-        <ComboBox x:Name="cmbFilter" HorizontalAlignment="Left" Margin="280,147,0,0" VerticalAlignment="Top" Width="169"/>
-        <TextBox x:Name="txtSearch"  Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="280,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="169" Height="31"/>
-        <TextBox x:Name="txtFilterInfo" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="488,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnSearch" Content="Search" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="488,182,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="lblScale" Content="Scale:" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="181,440,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.533,0.978"/>
-        <ComboBox x:Name="cmbFactor" HorizontalAlignment="Left" Margin="280,446,0,0" VerticalAlignment="Top" Width="169" Height="33"/>
-        <Button x:Name="btnScale" Content="Scale" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="488,446,0,0" VerticalAlignment="Top" Width="120" Click="btnScale_Click"/>
-        <Button x:Name="btnClearRecipe" Style ="{StaticResource defaultButton}" Content="Clear Recipe" HorizontalAlignment="Left" Margin="181,496,0,0" VerticalAlignment="Top" Width="152"/>
-        <Button x:Name="btnAddRecipe" Style ="{StaticResource defaultButton}" Content="Add a Recipe" HorizontalAlignment="Center" Margin="0,569,0,0" VerticalAlignment="Top" Width="143" Background="#2DBA1B1D" Click="btnAddRecipe_Click" FontSize="18"/>
-        <Button x:Name="btnShowAllRecipes" Style ="{StaticResource defaultButton}" Content="Show all recipes" HorizontalAlignment="Left" Margin="625,161,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnRefresh" Style ="{StaticResource defaultButton}" Content="Refresh" HorizontalAlignment="Left" Margin="451,496,0,0" VerticalAlignment="Top" Width="157" Click="btnRefresh_Click"/>
-        <Label x:Name="lblErrorMessage" HorizontalAlignment="Center" Margin="0,625,0,0" VerticalAlignment="Top" FontSize="16" Foreground="#FFBA1B1D"/>
-        <ListBox x:Name="lbxAllRecipes" Style ="{StaticResource defaultListBox}" Margin="181,238,181,0" VerticalAlignment="Top" Height="182" Width="438" SelectionChanged="lbxAllRecipes_SelectionChanged"/>
-        <Button x:Name="btnRevert" Style ="{StaticResource defaultButton}" Content="Revert" HorizontalAlignment="Left" Margin="644,446,0,0" VerticalAlignment="Top" Width="116"/>
+        <ComboBox x:Name="cmbFilter" HorizontalAlignment="Left" Margin="280,136,0,0" VerticalAlignment="Top" Width="133" Height="33"/>
+        <TextBox x:Name="txtSearch"  Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="297,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" Height="31"/>
+        <TextBox x:Name="txtFilterInfo" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="439,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="33"/>
+        <Button x:Name="btnSearch" Content="Search" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="477,184,0,0" VerticalAlignment="Top" Width="120" Click="btnSearch_Click"/>
+        <Label x:Name="lblScale" Content="Scale:" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="162,704,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.533,0.978"/>
+        <ComboBox x:Name="cmbFactor" HorizontalAlignment="Left" Margin="261,702,0,0" VerticalAlignment="Top" Width="169" Height="32"/>
+        <Button x:Name="btnScale" Content="Scale" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="469,702,0,0" VerticalAlignment="Top" Width="120" Click="btnScale_Click"/>
+        <Button x:Name="btnClearRecipe" Style ="{StaticResource defaultButton}" Content="Clear Recipe" HorizontalAlignment="Left" Margin="261,752,0,0" VerticalAlignment="Top" Width="152" Click="btnClearRecipe_Click"/>
+        <Button x:Name="btnAddRecipe" Style ="{StaticResource defaultButton}" Content="Add a Recipe" HorizontalAlignment="Left" Margin="320,849,0,0" VerticalAlignment="Top" Width="142" Background="#2DBA1B1D" Click="btnAddRecipe_Click" FontSize="18"/>
+        <Button x:Name="btnShowAllRecipes" Style ="{StaticResource defaultButton}" Content="Show all recipes" HorizontalAlignment="Left" Margin="683,165,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnRefresh" Style ="{StaticResource defaultButton}" Content="Refresh" HorizontalAlignment="Left" Margin="519,752,0,0" VerticalAlignment="Top" Width="156" Click="btnRefresh_Click"/>
+        <Label x:Name="lblErrorMessage" HorizontalAlignment="Left" Margin="386,880,0,0" VerticalAlignment="Top" FontSize="16" Foreground="#FFBA1B1D"/>
+        <ListBox x:Name="lbxAllRecipes" Style ="{StaticResource defaultListBox}" Margin="191,238,191,0" VerticalAlignment="Top" Height="236" Width="438" SelectionChanged="lbxAllRecipes_SelectionChanged"/>
+        <Button x:Name="btnRevert" Style ="{StaticResource defaultButton}" Content="Revert" HorizontalAlignment="Left" Margin="625,702,0,0" VerticalAlignment="Top" Width="116" Click="btnRevert_Click"/>
+        <Label x:Name="Label3" Content="Additional Information" Style="{StaticResource defaultLabel}" Margin="0,479,0,0" VerticalAlignment="Top">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="90" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFBA1B1D"/>
+                    <GradientStop Color="#FF8C2945" Offset="1"/>
+                    <GradientStop Color="#FF96857F" Offset="0.53"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="lblAdditionalInfo" Style="{StaticResource defaultLabel}" HorizontalAlignment="Center" Margin="0,521,0,0" VerticalAlignment="Top" BorderThickness="1,1,1,1" FontSize="16">
+            <Label.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="91" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFBA1B1D"/>
+                    <GradientStop Color="#FF5B2333" Offset="1"/>
+                    <GradientStop Color="#FF564D4A" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Label.BorderBrush>
+        </Label>
+        <Button x:Name="btnFilter" Content="Filter" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="597,136,0,0" VerticalAlignment="Top" Click="btnFilter_Click"/>
+        <Button x:Name="btnExit" Content="Exit" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="576,849,0,0" VerticalAlignment="Top" FontSize="18" Background="#72564D4A" Width="65" Click="btnExit_Click"/>
 
     </Grid>
 </Window>

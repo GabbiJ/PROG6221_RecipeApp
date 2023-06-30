@@ -41,7 +41,7 @@ namespace ST10034968_POEPart3.User_Interface
             }
             catch (Exception ex)
             {
-                lblErrorMessage.Content = ex.ToString();
+                lblErrorMessage.Content = ex.Message;
             }
 
         }
@@ -68,8 +68,21 @@ namespace ST10034968_POEPart3.User_Interface
 
         private void btnAddRecipe_Click(object sender, RoutedEventArgs e)
         {
-            AllRecipes.allRecipes.Add(AllRecipes.tempRecipe);
-            this.Close();
+            try
+            {
+                //adding recipe name
+                string name = txtName.Text; 
+                AllRecipes.tempRecipe.name = name;
+                //adding recipe to list of all recipes
+                AllRecipes.allRecipes.Add(AllRecipes.tempRecipe);
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                lblErrorMessage.Content = ex.Message;
+            }
+
         }
+
     }
 }

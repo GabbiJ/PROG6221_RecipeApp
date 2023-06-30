@@ -28,8 +28,9 @@ namespace ST10034968_POEPart3.User_Interface
             InitializeComponent();
             fillcmbUnitOfMeasurement();
             fillcmbFoodGroup();
+            addInfoToLblFoodGroupInfo();
         }
-
+        //event for when add button is clicked
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -91,14 +92,25 @@ namespace ST10034968_POEPart3.User_Interface
         }
         private void fillcmbFoodGroup()
         {
-            cmbFoodGroup.Items.Add("Starchy foods\tExamples: rice, pasta, bread");
-            cmbFoodGroup.Items.Add("Vegetables and fruits\tExamples: spinach, orange, tomato");
-            cmbFoodGroup.Items.Add("Dry beans, peas, lentils and soya:\tExamples: soy beans, chickpeas");
-            cmbFoodGroup.Items.Add("Meat:\tExamples: chicken, beef, fish");
-            cmbFoodGroup.Items.Add("Dairy:\tExamples: milk, cheese, amasi");
-            cmbFoodGroup.Items.Add("Fats and oils:\tExamples: Olive oil, nuts, sunflower oil");
-            cmbFoodGroup.Items.Add("Sugars:\tExamples: Candy, chocolates, syrup");
+            cmbFoodGroup.Items.Add("Starchy food");
+            cmbFoodGroup.Items.Add("Vegetables and fruits");
+            cmbFoodGroup.Items.Add("Dry beans, peas, lentils and soya");
+            cmbFoodGroup.Items.Add("Meat");
+            cmbFoodGroup.Items.Add("Dairy");
+            cmbFoodGroup.Items.Add("Fats and oils");
+            cmbFoodGroup.Items.Add("Sugars");
             cmbFoodGroup.Items.Add("Water");
+        }
+        //mehtod to add content to food group examples label
+        private void addInfoToLblFoodGroupInfo()
+        {
+            lblFoodGroupInfo.Content =  "Starchy foods:\t\t\tExamples: rice, pasta, bread\n" +
+                                        "Vegetables and fruits\t\tExamples: spinach, orange, tomato\n" +
+                                        "Dry beans, peas, lentils and soya:\tExamples: soy beans, chickpeas\n" +
+                                        "Meat:\t\t\t\tExamples: chicken, beef, fish\n" +
+                                        "Dairy:\t\t\t\tExamples: milk, cheese, amasi\n" +
+                                        "Fats and oils:\t\t\tExamples: Olive oil, nuts, sunflower oil\n" +
+                                        "Sugars:\t\t\t\tExamples: Candy, chocolates, syrup\n";
         }
     }
 }
