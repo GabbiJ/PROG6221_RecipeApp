@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10034968_POEPart3.User_Interface"
         mc:Ignorable="d"
-        Title="Add Recipe" Height="702" Width="852">
-    <Grid Background="#202020" Margin="0,0,0,-16">
+        Title="Add Recipe" Height="720" Width="852">
+    <Grid Background="#202020" Margin="0,0,0,-6">
         <Label x:Name="lblYourRecipe" Content="Your Recipe:" Style="{StaticResource defaultLabel}" Margin="0,93,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label" Content="Add a Step" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="239,461,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnAddIngredient" Style="{StaticResource defaultButton}" Content="Add Ingredient"  HorizontalAlignment="Left" Margin="546,503,0,0" VerticalAlignment="Top" Background="#4C5B2333" Click="btnAddIngredient_Click" />
@@ -15,8 +15,9 @@
         <Button x:Name="btnAddStep" Content="Add Step" Style="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="249,538,0,0" VerticalAlignment="Top" Background="#2DBA1B1D" Click="btnAddStep_Click"/>
         <Button x:Name="btnAddRecipe" Content="Add" Style="{StaticResource defaultButton}" HorizontalAlignment="Center" Margin="0,610,0,0" VerticalAlignment="Top" FontSize="18" Background="#72564D4A" Padding="20,5,20,5" Click="btnAddRecipe_Click"/>
         <Label x:Name="lblErrorMessage" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="383,514,0,0" VerticalAlignment="Top" FontSize="16" Foreground="#FFBA1B1D"/>
-        <ListBox x:Name="lbxDisplayRecipe" Style="{StaticResource defaultListBox}" Margin="120,135,120,343" Width="580" Background="#FF2D2626"/>
+        <ListBox x:Name="lbxDisplayRecipe" Style="{StaticResource defaultListBox}" Margin="120,135,120,343" Width="580" Background="#FF2D2626" FontSize="12"/>
         <Label x:Name="label1" Content="Recipe Name" Style="{StaticResource defaultLabel}" Margin="0,392,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtName" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Center" Margin="0,434,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165"/>
+        <Button x:Name="btnRefresh" Content="Refresh" Style="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="635,377,0,0" VerticalAlignment="Top" FontSize="18" Background="#2DBA1B1D" Click="btnRefresh_Click"/>
     </Grid>
 </Window>

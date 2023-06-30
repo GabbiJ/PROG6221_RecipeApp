@@ -21,7 +21,23 @@
         <TextBox x:Name="txtCalories" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="115,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="label4" Content="Food Group"  Style="{StaticResource defaultLabel}" Margin="0,292,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="cmbFoodGroup" HorizontalAlignment="Left" Margin="350,334,0,0" VerticalAlignment="Top" Width="118"/>
-        <Label x:Name="label5" Content="Food Group Examples:" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="350,375,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label x:Name="label5" Content="Food Group Examples:" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="350,375,0,0" VerticalAlignment="Top" FontSize="18">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <LinearGradientBrush.RelativeTransform>
+                        <TransformGroup>
+                            <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                            <SkewTransform CenterX="0.5" CenterY="0.5"/>
+                            <RotateTransform Angle="90" CenterX="0.5" CenterY="0.5"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </LinearGradientBrush.RelativeTransform>
+                    <GradientStop Color="#FFBA1B1D"/>
+                    <GradientStop Color="#FF8C2945" Offset="1"/>
+                    <GradientStop Color="#FF96837D" Offset="0.5"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
         <Label x:Name="lblFoodGroupInfo" Style="{StaticResource defaultLabel}"  HorizontalAlignment="Left" Margin="350,414,0,0" VerticalAlignment="Top" FontSize="12" BorderThickness="1,1,1,1">
             <Label.BorderBrush>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

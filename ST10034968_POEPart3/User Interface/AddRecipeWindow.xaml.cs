@@ -26,9 +26,10 @@ namespace ST10034968_POEPart3.User_Interface
         public AddRecipeWindow()
         {
             InitializeComponent();
+            lbxDisplayRecipe.Items.Clear();
         }
         //method for when buttons are clicked
-        //add ingredient button
+        //event for add ingredient button
         private void btnAddIngredient_Click(object sender, RoutedEventArgs e)
         {
             lbxDisplayRecipe.Items.Clear();
@@ -37,7 +38,6 @@ namespace ST10034968_POEPart3.User_Interface
                 //opening add ingredient window and displaying updated recipe
                 AddIngredientWindow ai = new AddIngredientWindow();
                 ai.Show();
-                lbxDisplayRecipe.Items.Add(AllRecipes.tempRecipe.ToString());
             }
             catch (Exception ex)
             {
@@ -45,7 +45,7 @@ namespace ST10034968_POEPart3.User_Interface
             }
 
         }
-        //add step button
+        //event for add step button
         private void btnAddStep_Click(object sender, RoutedEventArgs e)
         {
             lbxDisplayRecipe.Items.Clear();
@@ -63,9 +63,10 @@ namespace ST10034968_POEPart3.User_Interface
             {
                 lblErrorMessage.Content = ex.Message;
             }
+            txtAddStep.Clear();
             lbxDisplayRecipe.Items.Add(AllRecipes.tempRecipe.ToString());
         }
-
+        //event for when add recipe button is clicked
         private void btnAddRecipe_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -83,6 +84,10 @@ namespace ST10034968_POEPart3.User_Interface
             }
 
         }
-
+        //event for when refresh button is clicked
+        private void btnRefresh_Click(object sender, RoutedEventArgs e)
+        {
+            lbxDisplayRecipe.Items.Add(AllRecipes.tempRecipe.ToString());
+        }
     }
 }

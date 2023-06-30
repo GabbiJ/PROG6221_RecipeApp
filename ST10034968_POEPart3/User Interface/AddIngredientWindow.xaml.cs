@@ -44,6 +44,10 @@ namespace ST10034968_POEPart3.User_Interface
                 //if something is wrtten in textbox then that info is used, otherwise use combobox
                 if (txtOtherUnitOfMeasurement.Text != "Other")
                 {
+                    unitOfMeasurement = txtOtherUnitOfMeasurement.Text;
+                }
+                else
+                {
                     unitOfMeasurement = cmbUnitOfMeasurement.Text;
                 }
                 //creating ingredient and adding it to recipe list
