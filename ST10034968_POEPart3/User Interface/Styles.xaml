@@ -40,7 +40,6 @@
         <Setter Property="Foreground" Value="#FFF7F4F3" />
         <Setter Property="FontSize" Value="14" />
         <Setter Property="Background" Value="#FF2D2D2D"/>
-        <Setter Property="ScrollViewer.Visibility" Value="Visible"/>
     </Style>
 
     <Style TargetType="Button" x:Key="defaultButton">
