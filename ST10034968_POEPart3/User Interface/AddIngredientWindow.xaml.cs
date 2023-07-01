@@ -77,10 +77,14 @@ namespace ST10034968_POEPart3.User_Interface
         //when user deselects the textbox for unit of measurement it returns to default
         private void txtOtherUnitOfMeasurement_LostFocus(object sender, RoutedEventArgs e)
         {
-            BrushConverter converter = new BrushConverter();
-            Brush brush = (Brush)converter.ConvertFromString("#FF4A4A4A");
-            txtOtherUnitOfMeasurement.Foreground = brush;
-            txtOtherUnitOfMeasurement.Text = "Other";
+            if (txtOtherUnitOfMeasurement.Text == null)
+            {
+                BrushConverter converter = new BrushConverter();
+                Brush brush = (Brush)converter.ConvertFromString("#FF4A4A4A");
+                txtOtherUnitOfMeasurement.Foreground = brush;
+                txtOtherUnitOfMeasurement.Text = "Other";
+            }
+
         }
         //methods to add options to comboboxes
         private void fillcmbUnitOfMeasurement()

@@ -27,6 +27,7 @@ namespace ST10034968_POEPart3.User_Interface
         {
             InitializeComponent();
             lbxDisplayRecipe.Items.Clear();
+            AllRecipes.tempRecipe =  new Recipe();
         }
         //method for when buttons are clicked
         //event for add ingredient button

@@ -53,6 +53,7 @@ namespace ST10034968_POEPart3.User_Interface
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
             displayRecipesInListBox(AllRecipes.allRecipes);
+            btnShowAllRecipes.Visibility = Visibility.Hidden;
         }
         //event for when scale button clicked
         private void btnScale_Click(object sender, RoutedEventArgs e)
@@ -167,11 +168,23 @@ namespace ST10034968_POEPart3.User_Interface
                 }
             }
             displayRecipesInListBox(AllRecipes.filteredRecipes);
+            btnShowAllRecipes.Visibility = Visibility.Visible;
         }
         //event for when search button is clicked
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-
+            //clearing filtered recipes list
+            AllRecipes.filteredRecipes = new List<Recipe>();
+            //searching for a recipe that maches the inputted recipe
+            foreach (Recipe r in AllRecipes.allRecipes)
+            {
+                if(r.name.Equals(txtSearch.Text, StringComparison.OrdinalIgnoreCase))
+                {
+                    AllRecipes.filteredRecipes.Add(r);
+                }
+            }
+            displayRecipesInListBox(AllRecipes.filteredRecipes);
+            btnShowAllRecipes.Visibility = Visibility.Visible;
         }
         //event for when clear recipe button is clicked
         private void btnClearRecipe_Click(object sender, RoutedEventArgs e)
@@ -190,6 +203,13 @@ namespace ST10034968_POEPart3.User_Interface
         {
             Environment.Exit(0);
         }
+        //event for when show all recipes is clicked
+        private void btnShowAllRecipes_Click(object sender, RoutedEventArgs e)
+        {
+            displayRecipesInListBox(AllRecipes.allRecipes);
+            btnShowAllRecipes.Visibility = Visibility.Hidden;
+        }
+
 
         //methods
         //method to fill scale factor combo box
@@ -231,6 +251,7 @@ namespace ST10034968_POEPart3.User_Interface
             }
 
         }
+
 
     }
 }
