@@ -88,6 +88,7 @@ namespace ST10034968_POEPart3.User_Interface
         //event for when refresh button is clicked
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
+            lbxDisplayRecipe.Items.Clear();
             lbxDisplayRecipe.Items.Add(AllRecipes.tempRecipe.ToString());
         }
     }

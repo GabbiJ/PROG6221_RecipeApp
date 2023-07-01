@@ -14,7 +14,7 @@
         <Label x:Name="lblTitle" Style="{StaticResource heading}" Content="Add a Recipe" Margin="0,22,0,0" VerticalAlignment="Top" />
         <Button x:Name="btnAddStep" Content="Add Step" Style="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="239,645,0,0" VerticalAlignment="Top" Background="#2DBA1B1D" Click="btnAddStep_Click"/>
         <Button x:Name="btnAddRecipe" Content="Add" Style="{StaticResource defaultButton}" HorizontalAlignment="Center" Margin="0,724,0,0" VerticalAlignment="Top" FontSize="18" Background="#72564D4A" Padding="20,5,20,5" Click="btnAddRecipe_Click"/>
-        <ListBox x:Name="lbxDisplayRecipe" Style="{StaticResource defaultListBox}" Margin="136,135,136,398" Width="580" Background="#FF2D2626" FontSize="12"/>
+        <ListBox x:Name="lbxDisplayRecipe" Style="{StaticResource defaultListBox}" Margin="136,135,124,398" Background="#FF2D2626" FontSize="12"/>
         <Label x:Name="label1" Content="Recipe Name" Style="{StaticResource defaultLabel}" Margin="376,479,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         <TextBox x:Name="txtName" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="357,521,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165"/>
         <Button x:Name="btnRefresh" Content="Refresh" Style="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="635,417,0,0" VerticalAlignment="Top" FontSize="18" Background="#2DBA1B1D" Click="btnRefresh_Click"/>

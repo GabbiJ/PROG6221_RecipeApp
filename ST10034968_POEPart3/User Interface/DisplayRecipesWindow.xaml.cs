@@ -75,6 +75,10 @@ namespace ST10034968_POEPart3.User_Interface
                 }
 
             }
+            catch (IndexOutOfRangeException)
+            {
+
+            }
             catch (Exception ex)
             {
                 txtBlockError.Text = "Error: " + ex.Message;
@@ -161,7 +165,7 @@ namespace ST10034968_POEPart3.User_Interface
             {
                 foreach (Recipe r in AllRecipes.allRecipes)
                 {
-                    if (r.totalCalories <= Convert.ToDouble(txtFilterInfo))
+                    if (r.totalCalories <= Convert.ToDouble(txtFilterInfo.Text))
                     {
                         AllRecipes.filteredRecipes.Add(r);
                     }
@@ -229,7 +233,7 @@ namespace ST10034968_POEPart3.User_Interface
         //method to add content to label for addtional info
         private void addToLblAdditionalInfo()
         {
-            lblAdditionalInfo.Content = "The recommended daily amount of calories for an adult male:\t\t\t2500 calories\n" +
+            lblAdditionalInfo.Content = "The recommended daily amount of calories for an adult male:\t\t2500 calories\n" +
                                         "The recommended daily amount of calories for an adult female:\t\t2000 calories\n" +
                                         "However many other factors such as age and exercise can change these recommended daily calory amounts\n";
         }
