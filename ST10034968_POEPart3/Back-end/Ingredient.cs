@@ -31,6 +31,8 @@ namespace ST10034968_POEPart3
             this.Quantity = quantity;
             this.Calories = calories;
             FoodGroup = foodGroup;
+            this.convertUp();
+            this.convertDown();
         }
         //default constructor
         public Ingredient()

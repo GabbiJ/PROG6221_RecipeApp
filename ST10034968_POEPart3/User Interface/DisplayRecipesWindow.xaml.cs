@@ -31,7 +31,7 @@ namespace ST10034968_POEPart3.User_Interface
             btnRevert.Visibility = Visibility.Hidden;
             //filling combo boxes
             fillcmbFactor();
-            fillcmbFactor();
+            fillcmbFilter();
             //adding addiotnal info
             addToLblAdditionalInfo();
         }
