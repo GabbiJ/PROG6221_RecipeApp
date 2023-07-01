@@ -42,7 +42,7 @@ namespace ST10034968_POEPart3.User_Interface
             }
             catch (Exception ex)
             {
-                lblErrorMessage.Content = ex.Message;
+                txtBlockError.Text = ex.Message;
             }
 
         }
@@ -58,11 +58,11 @@ namespace ST10034968_POEPart3.User_Interface
             }
             catch (FormatException)
             {
-                lblErrorMessage.Content = "Please check that all the values have been entered and that they are entered correctly.";
+                txtBlockError.Text = "Please check that all the values have been entered and that they are entered correctly.";
             }
             catch (Exception ex)
             {
-                lblErrorMessage.Content = ex.Message;
+                txtBlockError.Text = ex.Message;
             }
             txtAddStep.Clear();
             lbxDisplayRecipe.Items.Add(AllRecipes.tempRecipe.ToString());
@@ -81,7 +81,7 @@ namespace ST10034968_POEPart3.User_Interface
             }
             catch (Exception ex)
             {
-                lblErrorMessage.Content = ex.Message;
+                txtBlockError.Text = ex.Message;
             }
 
         }

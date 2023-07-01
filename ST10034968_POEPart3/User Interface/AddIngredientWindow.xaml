@@ -16,7 +16,7 @@
         <TextBox x:Name="txtQuantity" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="115,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99"/>
         <ComboBox x:Name="cmbUnitOfMeasurement" HorizontalAlignment="Left" Margin="350,250,0,0" VerticalAlignment="Top" Width="118"/>
         <TextBox x:Name="txtOtherUnitOfMeasurement" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="486,250,0,0" TextWrapping="Wrap" Text="Other" VerticalAlignment="Top" Width="154" Foreground="#FF4A4A4A" GotFocus="txtOtherUnitOfMeasurement_GotFocus" LostFocus="txtOtherUnitOfMeasurement_LostFocus" />
-        <Label x:Name="lblErrorMessage" Style="{StaticResource defaultLabel}" Margin="345,375,0,0" VerticalAlignment="Top" FontSize="16" Foreground="#FFBA1B1D" HorizontalAlignment="Left"/>
+        <TextBlock x:Name="txtBlockError" Style="{StaticResource errorTextBlock}" HorizontalAlignment="Left" Margin="120,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="207"/>
         <Label x:Name="label3" Content="Calories" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="115,292,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtCalories" Style="{StaticResource defaultTextbox}" HorizontalAlignment="Left" Margin="115,334,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="label4" Content="Food Group"  Style="{StaticResource defaultLabel}" Margin="0,292,0,0" VerticalAlignment="Top"/>

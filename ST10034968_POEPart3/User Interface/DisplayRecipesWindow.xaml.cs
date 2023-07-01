@@ -46,7 +46,7 @@ namespace ST10034968_POEPart3.User_Interface
             }
             catch (Exception ex)
             {
-                lblErrorMessage.Content = "Error: " + ex.ToString();
+                txtBlockError.Text = "Error: " + ex.ToString();
             } 
         }
         //event for when refresh button is clicked
@@ -77,7 +77,7 @@ namespace ST10034968_POEPart3.User_Interface
             }
             catch (Exception ex)
             {
-                lblErrorMessage.Content = "Error: " + ex.Message;
+                txtBlockError.Text = "Error: " + ex.Message;
             }
 
 
@@ -111,7 +111,7 @@ namespace ST10034968_POEPart3.User_Interface
             }
             catch (Exception ex)
             {
-                lblErrorMessage.Content = "Error: " + ex.Message;
+                txtBlockError.Text = "Error: " + ex.Message;
             }
 
         }
@@ -124,7 +124,7 @@ namespace ST10034968_POEPart3.User_Interface
             }
             catch (Exception ex)
             {
-                lblErrorMessage.Content = "Error: " + ex.Message;
+                txtBlockError.Text = "Error: " + ex.Message;
             }
         }
         //event for when filter button is clicked
@@ -229,8 +229,8 @@ namespace ST10034968_POEPart3.User_Interface
         //method to add content to label for addtional info
         private void addToLblAdditionalInfo()
         {
-            lblAdditionalInfo.Content = "The recommended daily amount of calories for an adult male:\t2500 calories\n" +
-                                        "The recommended daily amount of calories for an adult female:\t2000 calories\n" +
+            lblAdditionalInfo.Content = "The recommended daily amount of calories for an adult male:\t\t\t2500 calories\n" +
+                                        "The recommended daily amount of calories for an adult female:\t\t2000 calories\n" +
                                         "However many other factors such as age and exercise can change these recommended daily calory amounts\n";
         }
         //method to display all the recipes in the text block
@@ -247,7 +247,7 @@ namespace ST10034968_POEPart3.User_Interface
             }
             catch (Exception ex)
             {
-                lblErrorMessage.Content = "Error: " + ex.Message;
+                txtBlockError.Text = "Error: " + ex.Message;
             }
 
         }

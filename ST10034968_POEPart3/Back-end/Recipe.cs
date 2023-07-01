@@ -18,7 +18,7 @@ namespace ST10034968_POEPart3
         public string name;
         public List<string> steps = new List<string>();
         public List<Ingredient> ingredients = new List<Ingredient>();
-        public List<Ingredient> oldIngredients;
+        public List<Ingredient> oldIngredients = new List<Ingredient>();
         public bool quantitiesAltered = false;
         public double totalCalories = 0;
         //delegate for event
@@ -30,7 +30,6 @@ namespace ST10034968_POEPart3
                 name = nameEntered;
                 steps = stepsEntered;
                 ingredients = ingredientsEntered;
-                oldIngredients = new List<Ingredient>();
                 //calculate total calories
                 calcTotalCalories();
             }

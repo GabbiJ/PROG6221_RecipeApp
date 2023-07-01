@@ -57,11 +57,11 @@ namespace ST10034968_POEPart3.User_Interface
             }
             catch (FormatException)
             {
-                lblErrorMessage.Content = "Please check that all the values have been entered and that they are entered correctly.";
+                txtBlockError.Text = "Please check that all the values have been entered and that they are entered correctly.";
             }
-            catch (Exception error)
+            catch (Exception ex)
             {
-                lblErrorMessage.Content = error.Message;
+                txtBlockError.Text = ex.Message;
             } 
 
         }
