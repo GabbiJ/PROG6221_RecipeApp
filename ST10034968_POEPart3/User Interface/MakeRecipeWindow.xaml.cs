@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,21 @@ namespace ST10034968_POEPart3.User_Interface
         public MakeRecipeWindow()
         {
             InitializeComponent();
+            //binding the list of steps to the list box so that they can be checked off once completed
+            DataContext = AllRecipes.tempRecipe.steps;
+            //setting heading to name of recipe
+            lblName.Content = AllRecipes.tempRecipe.name;
+            //adding ingredients to textblock
+            addTotxtBlockIngredients();
+        }
+
+        //method that adds the list of ingredients to the ingredient textblock
+        private void addTotxtBlockIngredients()
+        {
+            foreach (Ingredient i in AllRecipes.tempRecipe.ingredients)
+            {
+                txtBlockIngredients.Text += i.ToString();
+            }
         }
     }
 }

@@ -17,8 +17,8 @@
         <Label x:Name="lblScale" Content="Scale:" Style="{StaticResource defaultLabel}" HorizontalAlignment="Left" Margin="158,740,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.533,0.978"/>
         <ComboBox x:Name="cmbFactor" HorizontalAlignment="Left" Margin="257,738,0,0" VerticalAlignment="Top" Width="169" Height="32"/>
         <Button x:Name="btnScale" Content="Scale" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="465,738,0,0" VerticalAlignment="Top" Width="120" Click="btnScale_Click"/>
-        <Button x:Name="btnClearRecipe" Style ="{StaticResource defaultButton}" Content="Clear Recipe" HorizontalAlignment="Left" Margin="419,791,0,0" VerticalAlignment="Top" Width="152" Click="btnClearRecipe_Click"/>
-        <Button x:Name="btnAddRecipe" Style ="{StaticResource defaultButton}" Content="Add a Recipe" HorizontalAlignment="Left" Margin="320,849,0,0" VerticalAlignment="Top" Width="142" Background="#2DBA1B1D" Click="btnAddRecipe_Click" FontSize="18"/>
+        <Button x:Name="btnClearRecipe" Style ="{StaticResource defaultButton}" Content="Clear Recipe" HorizontalAlignment="Left" Margin="288,791,0,0" VerticalAlignment="Top" Width="152" Click="btnClearRecipe_Click" RenderTransformOrigin="0.263,0.497"/>
+        <Button x:Name="btnAddRecipe" Style ="{StaticResource defaultButton}" Content="Add a Recipe" HorizontalAlignment="Left" Margin="288,849,0,0" VerticalAlignment="Top" Width="142" Background="#2DBA1B1D" Click="btnAddRecipe_Click" FontSize="18"/>
         <Button x:Name="btnShowAllRecipes" Style ="{StaticResource defaultButton}" Content="Show all recipes" HorizontalAlignment="Left" Margin="683,166,0,0" VerticalAlignment="Top" Click="btnShowAllRecipes_Click"/>
         <Button x:Name="btnRefresh" Style ="{StaticResource defaultButton}" Content="Refresh" HorizontalAlignment="Left" Margin="589,587,0,0" VerticalAlignment="Top" Width="78" Click="btnRefresh_Click"/>
         <ListBox x:Name="lbxAllRecipes" Style ="{StaticResource defaultListBox}" Margin="235,238,225,0" VerticalAlignment="Top" Height="341" SelectionChanged="lbxAllRecipes_SelectionChanged" FontSize="12"/>
@@ -61,6 +61,7 @@
         <Button x:Name="btnFilter" Content="Filter" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="621,136,0,0" VerticalAlignment="Top" Click="btnFilter_Click"/>
         <Button x:Name="btnExit" Content="Exit" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="576,849,0,0" VerticalAlignment="Top" FontSize="18" Background="#72564D4A" Width="65" Click="btnExit_Click"/>
         <TextBlock x:Name="txtBlockError" Style ="{StaticResource errorTextBlock}" HorizontalAlignment="Left" Margin="158,914,0,0"  VerticalAlignment="Top" Width="660"/>
+        <Button x:Name="btnMakeRecipe" Content="Make This Recipe" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="534,791,0,0" VerticalAlignment="Top" Background="#4C5B2333" Click="btnMakeRecipe_Click"/>
 
     </Grid>
 </Window>

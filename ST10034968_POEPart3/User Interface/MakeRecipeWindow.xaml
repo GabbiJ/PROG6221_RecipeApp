@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ST10034968_POEPart3.User_Interface"
         mc:Ignorable="d"
-        Title="MakeRecipeWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MakeRecipeWindow" Height="601" Width="800">
+    <Grid Background="#202020" Height="581" VerticalAlignment="Top">
+        <TextBlock x:Name="txtBlockIngredients"  HorizontalAlignment="Center" Margin="0,120,0,0" TextWrapping="Wrap" Text="Ingredients:" VerticalAlignment="Top" Foreground="#FFF7F4F3" FontSize="14" Width="630"/>
+        <Label x:Name="lblName" Content="Label" Style="{StaticResource heading}" Margin="0,48,0,0" VerticalAlignment="Top"/>
+        <ListBox ItemsSource="{Binding}" Style="{StaticResource defaultListBox}" Margin="85,290,91,34">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <CheckBox Content="{Binding}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
     </Grid>
 </Window>

@@ -231,7 +231,11 @@ namespace ST10034968_POEPart3.User_Interface
             displayRecipesInListBox(AllRecipes.allRecipes);
             btnShowAllRecipes.Visibility = Visibility.Hidden;
         }
+        //event for make this recipe button
+        private void btnMakeRecipe_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
 
         //methods
         //method to fill scale factor combo box
@@ -273,7 +277,6 @@ namespace ST10034968_POEPart3.User_Interface
             }
 
         }
-
 
     }
 }
