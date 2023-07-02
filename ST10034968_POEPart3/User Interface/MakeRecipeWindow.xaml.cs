@@ -34,10 +34,18 @@ namespace ST10034968_POEPart3.User_Interface
         //method that adds the list of ingredients to the ingredient textblock
         private void addTotxtBlockIngredients()
         {
+            txtBlockIngredients.Text = "";
             foreach (Ingredient i in AllRecipes.tempRecipe.ingredients)
             {
-                txtBlockIngredients.Text += i.ToString();
+                txtBlockIngredients.Text += i.printIngredient() + "\n";
             }
         }
+        //event for when back button is pressed
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+        
+
     }
 }

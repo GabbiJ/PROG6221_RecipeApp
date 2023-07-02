@@ -29,6 +29,7 @@ namespace ST10034968_POEPart3.User_Interface
             btnScale.Visibility = Visibility.Hidden;
             btnClearRecipe.Visibility = Visibility.Hidden;
             btnRevert.Visibility = Visibility.Hidden;
+            btnMakeRecipe.Visibility = Visibility.Hidden;
             //filling combo boxes
             fillcmbFactor();
             fillcmbFilter();
@@ -46,7 +47,7 @@ namespace ST10034968_POEPart3.User_Interface
             }
             catch (Exception ex)
             {
-                txtBlockError.Text = "Error: " + ex.ToString();
+                txtBlockError.Text = "Error: " + ex.Message;
             } 
         }
         //event for when refresh button is clicked
@@ -104,6 +105,7 @@ namespace ST10034968_POEPart3.User_Interface
                     cmbFactor.Visibility = Visibility.Visible;
                     btnScale.Visibility = Visibility.Visible;
                     btnClearRecipe.Visibility = Visibility.Visible;
+                    btnMakeRecipe.Visibility = Visibility.Visible;
                     //if recipe has been scaled, show revert button
                     if (AllRecipes.allRecipes.ElementAt(index).quantitiesAltered == true)
                     {
@@ -234,7 +236,16 @@ namespace ST10034968_POEPart3.User_Interface
         //event for make this recipe button
         private void btnMakeRecipe_Click(object sender, RoutedEventArgs e)
         {
-
+            try
+            {
+                AllRecipes.tempRecipe = AllRecipes.allRecipes.ElementAt(lbxAllRecipes.SelectedIndex);
+                MakeRecipeWindow makeRecipeWin = new MakeRecipeWindow();
+                makeRecipeWin.Show();
+            }
+            catch (Exception ex)
+            {
+                txtBlockError.Text = "Error: " + ex.Message;
+            }            
         }
 
         //methods
