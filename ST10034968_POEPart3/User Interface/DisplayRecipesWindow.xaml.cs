@@ -52,31 +52,36 @@ namespace ST10034968_POEPart3.User_Interface
         //event for when refresh button is clicked
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
-            displayRecipesInListBox(AllRecipes.allRecipes);
-            btnShowAllRecipes.Visibility = Visibility.Hidden;
+            try
+            {
+                displayRecipesInListBox(AllRecipes.allRecipes);
+                btnShowAllRecipes.Visibility = Visibility.Hidden;
+            }
+            catch (Exception ex)
+            {
+                txtBlockError.Text = ex.Message;
+            }
+
         }
         //event for when scale button clicked
         private void btnScale_Click(object sender, RoutedEventArgs e)
         {
+            int index = lbxAllRecipes.SelectedIndex; 
             try
             {
                 //scaling relevant recipe that is selected in list box
                 if (cmbFactor.Text.Equals("Double"))
                 {
-                    AllRecipes.allRecipes.ElementAt(lbxAllRecipes.SelectedIndex).scale(2);
+                    AllRecipes.allRecipes.ElementAt(index).scale(2);
                 }
                 else if (cmbFactor.Text.Equals("Triple"))
                 {
-                    AllRecipes.allRecipes.ElementAt(lbxAllRecipes.SelectedIndex).scale(3);
+                    AllRecipes.allRecipes.ElementAt(index).scale(3);
                 }
-                else if (cmbFactor.Equals("Half"))
+                else if (cmbFactor.Text.Equals("Half"))
                 {
-                    AllRecipes.allRecipes.ElementAt(lbxAllRecipes.SelectedIndex).scale(0.5);
+                    AllRecipes.allRecipes.ElementAt(index).scale(0.5);
                 }
-
-            }
-            catch (IndexOutOfRangeException)
-            {
 
             }
             catch (Exception ex)
@@ -94,14 +99,19 @@ namespace ST10034968_POEPart3.User_Interface
                 //if an item is selected then display relevant buttons
                 if (lbxAllRecipes.SelectedItems != null)
                 {
+                    int index = lbxAllRecipes.SelectedIndex;
                     lblScale.Visibility = Visibility.Visible;
                     cmbFactor.Visibility = Visibility.Visible;
                     btnScale.Visibility = Visibility.Visible;
                     btnClearRecipe.Visibility = Visibility.Visible;
                     //if recipe has been scaled, show revert button
-                    if (AllRecipes.allRecipes.ElementAt(lbxAllRecipes.SelectedIndex).quantitiesAltered == true)
+                    if (AllRecipes.allRecipes.ElementAt(index).quantitiesAltered == true)
                     {
                         btnRevert.Visibility = Visibility.Visible;
+                    }
+                    else
+                    {
+                        btnRevert.Visibility = Visibility.Hidden;
                     }
                 }
                 else
@@ -113,9 +123,17 @@ namespace ST10034968_POEPart3.User_Interface
                     btnRevert.Visibility = Visibility.Hidden;
                 }
             }
+            catch (IndexOutOfRangeException)
+            {
+
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+
+            }
             catch (Exception ex)
             {
-                txtBlockError.Text = "Error: " + ex.Message;
+                txtBlockError.Text = "Error: " + ex.ToString();
             }
 
         }

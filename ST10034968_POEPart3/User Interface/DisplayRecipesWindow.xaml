@@ -60,7 +60,7 @@
         </Label>
         <Button x:Name="btnFilter" Content="Filter" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="621,136,0,0" VerticalAlignment="Top" Click="btnFilter_Click"/>
         <Button x:Name="btnExit" Content="Exit" Style ="{StaticResource defaultButton}" HorizontalAlignment="Left" Margin="576,849,0,0" VerticalAlignment="Top" FontSize="18" Background="#72564D4A" Width="65" Click="btnExit_Click"/>
-        <TextBlock x:Name="txtBlockError" Style ="{StaticResource errorTextBlock}" HorizontalAlignment="Left" Margin="320,914,0,0"  VerticalAlignment="Top" Width="321"/>
+        <TextBlock x:Name="txtBlockError" Style ="{StaticResource errorTextBlock}" HorizontalAlignment="Left" Margin="158,914,0,0"  VerticalAlignment="Top" Width="660"/>
 
     </Grid>
 </Window>
